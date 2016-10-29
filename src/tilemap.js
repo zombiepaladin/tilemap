@@ -46,7 +46,7 @@ module.exports = (function (){
           // Source x position.  i % colCount == col number (as we remove full rows)
           sx: (i % colCount) * tileWidth,
           // Source y position. i / colWidth (integer division) == row number 
-          sy: Math.floor(i / rowCount) * tileHeight,
+          sy: Math.floor(i / colCount) * tileHeight,
           // Indicates a solid tile (i.e. solid property is true).  As properties
           // can be left blank, we need to make sure the property exists. 
           // We'll assume any tiles missing the solid property are *not* solid
